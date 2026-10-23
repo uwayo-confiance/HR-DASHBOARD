@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Insight Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">✿</div>
+        <div><strong>Nosense Studio</strong><small>hello@nosense.studio</small></div>
+      </div>
+      <label class="search"><span>⌕</span><input type="search" placeholder="Search"><kbd>⌘ K</kbd></label>
+      <nav class="main-nav">
+        <a class="active" href="#"><span>▦</span>Dashboard</a>
+        <a href="#"><span>♙</span>Employee Directory</a>
+        <a href="#"><span>◷</span>Attendance</a>
+        <a href="#"><span>▤</span>Employee Performance</a>
+        <a href="#"><span>▣</span>Leave Management</a>
+        <a href="#"><span>▥</span>Payroll</a>
+        <a href="#"><span>⌕</span>Recruitment</a>
+        <a href="#"><span>♧</span>Onboarding</a>
+        <a href="#"><span>♜</span>Development</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a href="#"><span>ⓘ</span>Help Center</a>
+        <a href="#"><span>⚙</span>Settings</a>
+        <a class="signout" href="#"><span>⇥</span>Sign Out</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumbs">Dashboard <span>/</span> Overview</div>
+        <div class="top-actions"><button class="btn light">＋ Invite People</button><button class="btn primary">Generate Plan</button></div>
+      </header>
+      <section class="page-heading">
+        <div><h1>HR Insight Dashboard</h1><p>Smart HR insights that drive better decisions.</p></div>
+        <div class="heading-actions"><button class="btn light">⇩ Export Data</button><button class="btn primary">＋ New Entry</button></div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card"><div class="stat-title"><span class="tiny-icon">♟</span>Total Employee <b>···</b></div><div class="stat-value">272 <small class="trend">↗ 5% <em>last month</em></small></div></article>
+        <article class="stat-card"><div class="stat-title"><span class="tiny-icon">♙</span>New Employee <b>···</b></div><div class="stat-value">72 <small class="trend">↗ 4% <em>last month</em></small></div></article>
+        <article class="stat-card"><div class="stat-title"><span class="tiny-icon">♧</span>Resign Employee <b>···</b></div><div class="stat-value">16 <small class="trend">↗ 2% <em>last month</em></small></div></article>
+        <article class="stat-card"><div class="stat-title"><span class="tiny-icon">▣</span>Job Applicants <b>···</b></div><div class="stat-value">329 <small class="trend">↗ 8% <em>last month</em></small></div></article>
+      </section>
+
+      <section class="middle-grid">
+        <article class="panel performance">
+          <div class="panel-head"><h2>Team Performance</h2><b>···</b></div>
+          <div class="legend"><span><i class="dot purple"></i>Project Team</span><span><i class="dot orange"></i>Product Team</span><div class="toggle"><button>Monthly</button><button class="selected">Yearly</button></div></div>
+          <div class="chart">
+            <div class="y-labels"><span>50K</span><span>40K</span><span>30K</span><span>20K</span><span>10K</span></div>
+            <div class="chart-plot">
+              <div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+              <svg viewBox="0 0 640 205" preserveAspectRatio="none" aria-label="Team performance line chart">
+                <path class="area-purple" d="M0 104 C25 88 42 125 70 96 S112 78 137 99 S177 112 205 110 S236 58 260 80 S300 102 320 84 S360 92 385 69 S422 86 445 73 S480 83 510 64 S548 79 570 57 S612 65 640 31 L640 205 L0 205 Z"/>
+                <path class="line-purple" d="M0 104 C25 88 42 125 70 96 S112 78 137 99 S177 112 205 110 S236 58 260 80 S300 102 320 84 S360 92 385 69 S422 86 445 73 S480 83 510 64 S548 79 570 57 S612 65 640 31"/>
+                <path class="line-orange" d="M0 147 C28 139 48 163 77 155 S115 177 145 151 S185 166 210 143 S236 109 260 132 S292 168 320 137 S350 161 378 146 S410 173 438 126 S475 151 500 132 S538 167 562 135 S602 157 620 127 S632 141 640 110"/>
+                <circle cx="445" cy="73" r="4" fill="#7545e8"/><circle cx="445" cy="126" r="4" fill="#ed9b55"/>
+              </svg>
+              <div class="tooltip"><strong>Sep, 2025</strong><span><i class="dot purple"></i>Project Team <b>38K</b></span><span><i class="dot orange"></i>Product Team <b>24K</b></span></div>
+            </div>
+            <div class="x-labels"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><strong>Sep</strong><span>Oct</span><span>Nov</span><span>Dec</span></div>
+          </div>
+        </article>
+        <article class="panel attendance">
+          <div class="panel-head"><h2>Attendance Report</h2><b>···</b></div>
+          <div class="heatmap">
+            <div class="times"><span>11:00</span><span>10:30</span><span>10:00</span><span>09:30</span><span>09:00</span><span>08:30</span></div>
+            <div class="heat-content">
+              <div class="heat-row"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="heat-row"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="heat-row"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="heat-row"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="heat-row"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="heat-row strong"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="panel employees">
+          <div class="panel-head"><h2>Employees</h2><b>···</b></div>
+          <div class="table-wrap"><table>
+            <thead><tr><th><input type="checkbox" aria-label="Select all"></th><th>Employee ID</th><th>Full Name</th><th>Email</th><th>Role</th><th>Department</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td><input type="checkbox"></td><td>#FR01890</td><td>Cooper Hewitt</td><td>cooper@mail.com</td><td>Jr. Developer</td><td>IT</td><td><span class="status">Active</span></td></tr>
+              <tr><td><input type="checkbox"></td><td>#FR01728</td><td>Kierra Gouse</td><td>kierra@mail.com</td><td>UI Designer</td><td>Creative</td><td><span class="status">Active</span></td></tr>
+              <tr><td><input type="checkbox"></td><td>#FR01653</td><td>Cheyenne Franci</td><td>cheyenne@mail.com</td><td>Development</td><td>HR</td><td><span class="status">Active</span></td></tr>
+              <tr><td><input type="checkbox"></td><td>#FR01832</td><td>Charlie Saris</td><td>charlie@mail.com</td><td>Media Social</td><td>Marketing</td><td><span class="status">Active</span></td></tr>
+              <tr><td><input type="checkbox"></td><td>#FR01728</td><td>Lindsey Mango</td><td>lindsey@mail.com</td><td>Product Designer</td><td>Creative</td><td><span class="status">Active</span></td></tr>
+            </tbody>
+          </table></div>
+        </article>
+        <article class="panel jobs">
+          <div class="panel-head"><h2>Jobs Overview</h2><b>···</b></div>
+          <div class="gauge-wrap">
+            <svg class="gauge" viewBox="0 0 220 110" aria-label="Jobs overview gauge">
+              <path d="M20 100 A90 90 0 0 1 200 100" fill="none" stroke="#ece8f8" stroke-width="16" stroke-linecap="butt"/>
+              <path d="M20 100 A90 90 0 0 1 110 10" fill="none" stroke="#7545e8" stroke-width="16" stroke-linecap="butt"/>
+              <path d="M110 10 A90 90 0 0 1 188 55" fill="none" stroke="#ed9b55" stroke-width="16" stroke-linecap="butt"/>
+              <path d="M188 55 A90 90 0 0 1 200 100" fill="none" stroke="#5bd68a" stroke-width="16" stroke-linecap="butt"/>
+            </svg>
+            <div class="gauge-number"><strong>72</strong><small>Total Jobs</small></div>
+          </div>
+          <div class="job-legend"><div><i class="dot purple"></i><b>46</b><span>Active Jobs</span></div><div><i class="dot orange"></i><b>18</b><span>In Review Jobs</span></div><div><i class="dot green"></i><b>8</b><span>Finish Jobs</span></div></div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
